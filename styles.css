@@ -1,0 +1,417 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+header {
+    background-color: #f9f8fa;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    padding: 8px 16px;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #e2e6ea;
+}
+
+.hero {
+    background-image: url('https://images.unsplash.com/photo-1601996159863-9116190ef5da?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDF8fGRhaXJ5fGVufDB8fHx8MTYyNzgwNzU5Ng&ixlib=rb-1.2.1&q=80&w=400');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-align: center;
+}
+
+.hero-content {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin: 0;
+}
+
+.hero p {
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+.hero button {
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.hero button:hover {
+    background-color: #218838;
+}
+
+section {
+    padding: 60px 20px;
+}
+
+h2 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+
+.about img,
+.service-item img,
+.feature-item img,
+.blog-item img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.service-list,
+.feature-list,
+.blog-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.service-item,
+.feature-item,
+.blog-item {
+    flex: 1 1 calc(33.333% - 40px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.service-item h3,
+.feature-item h3,
+.blog-item h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.service-item p,
+.feature-item p,
+.blog-item p {
+    font-size: 16px;
+}
+
+.contact form {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+button[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+footer {
+    background-color: #343a40;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+footer .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+footer p {
+    margin: 0;
+}
+
+footer ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+footer ul li {
+    margin-left: 10px;
+}
+
+footer ul li a img {
+    width: 24px;
+    height: 24px;
+    filter: invert(100%);
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+
+    .hero h1 {
+        font-size: 32px;
+    }
+
+    .hero p {
+        font-size: 18px;
+    }
+
+    .hero button {
+        font-size: 16px;
+        padding: 8px 16px;
+    }
+
+    .service-item,
+    .feature-item,
+    .blog-item {
+        flex: 1 1 100%;
+    }
+
+    .service-list,
+    .feature-list,
+    .blog-list {
+        flex-direction: column;
+    }
+
+    .contact form {
+        padding: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero h1 {
+        font-size: 28px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    .hero button {
+        font-size: 14px;
+        padding: 8px 12px;
+    }
+
+    h2 {
+        font-size: 28px;
+    }
+
+    .service-item,
+    .feature-item,
+    .blog-item {
+        padding: 15px;
+    }
+
+    .contact form {
+        padding: 15px;
+    }
+
+    footer .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    footer ul {
+        justify-content: center;
+    }
+
+    footer ul li {
+        margin-left: 0;
+        margin-right: 10px;
+    }
+}
+
+/* Styles for images */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+
+    .hero h1 {
+        font-size: 32px;
+    }
+
+    .hero p {
+        font-size: 18px;
+    }
+
+    .hero button {
+        font-size: 16px;
+        padding: 8px 16px;
+    }
+
+    .service-item,
+    .feature-item,
+    .blog-item {
+        flex: 1 1 100%;
+    }
+
+    .service-list,
+    .feature-list,
+    .blog-list {
+        flex-direction: column;
+    }
+
+    .contact form {
+        padding: 20px;
+    }
+
+    .service-item img,
+    .feature-item img,
+    .blog-item img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero h1 {
+        font-size: 28px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    .hero button {
+        font-size: 14px;
+        padding: 8px 12px;
+    }
+
+    h2 {
+        font-size: 28px;
+    }
+
+    .service-item,
+    .feature-item,
+    .blog-item {
+        padding: 15px;
+    }
+
+    .contact form {
+        padding: 15px;
+    }
+
+    footer .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    footer ul {
+        justify-content: center;
+    }
+
+    footer ul li {
+        margin-left: 0;
+        margin-right: 10px;
+    }
+
+    .service-item img,
+    .feature-item img,
+    .blog-item img {
+        width: 100%;
+        height: auto;
+    }
+}
